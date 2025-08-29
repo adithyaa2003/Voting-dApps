@@ -1,0 +1,155 @@
+/* General Body Styles */
+body {
+  background-color: #f0f4f8;
+  /* A light, clean blue-gray background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Main container for the voting poll */
+.poll-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Header section with title and "Live" badge */
+.poll-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.poll-header h1 {
+  font-size: 26px;
+  color: #ff6347;
+  /* Tomato color for emphasis */
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.live-badge {
+  color: #dc2626;
+  /* Red color for "Live" */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Admin panel for the owner */
+.admin-panel {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+}
+
+.admin-panel h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.admin-panel input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cbd5e1;
+  margin-right: 10px;
+}
+
+/* General button styles */
+.button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-add {
+  background-color: #2563eb;
+  color: white;
+}
+
+.button-add:hover {
+  background-color: #1d4ed8;
+}
+
+.button-vote {
+  background-color: #16a34a;
+  color: white;
+}
+
+.button-vote:hover {
+  background-color: #15803d;
+}
+
+.button-remove {
+  background-color: #dc2626;
+  color: white;
+  margin-left: 10px;
+}
+
+.button-remove:hover {
+  background-color: #b91c1c;
+}
+
+
+/* Styling for the results table */
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.results-table th,
+.results-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.results-table thead {
+  background-color: #f1f5f9;
+}
+
+.results-table th {
+  color: #475569;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.results-table td {
+  color: #1e293b;
+  font-size: 16px;
+}
+
+/* Section for displaying the user's account */
+.account-info {
+  background-color: #e2e8f0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.account-info p {
+  margin: 0;
+  font-weight: bold;
+  color: #334155;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
